@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ClassUp English - Kursus Bahasa Inggris Online & Offline</title>
+<meta name="description" content="ClassUp English - Kursus bahasa Inggris online dan offline untuk anak, remaja, dan dewasa.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{font-family:Inter,Arial,sans-serif;scroll-behavior:smooth}
+body{margin:0;color:#172033;background:#f8fafc}
+.hero{background:linear-gradient(135deg,#071f4b,#075985 55%,#0891b2)}
+.card{transition:.25s}.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(15,23,42,.12)}
+</style>
+</head>
+<body>
+
+<header class="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm">
+<div class="max-w-7xl mx-auto px-5">
+<div class="h-20 flex items-center justify-between">
+<a href="#home" class="flex items-center gap-3">
+<!-- TEMPAT LOGO BRAND:
+     Ganti isi src dengan nama file logo kamu, contoh: logo-classup.png
+     Upload logo ke repository GitHub yang sama. -->
+<img src="logo-classup.png" alt="Logo ClassUp" class="w-12 h-12 rounded-xl object-contain border border-gray-100"
+     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="w-11 h-11 rounded-xl bg-blue-700 text-white items-center justify-center font-black text-xl" style="display:none">C</div>
+<div><b class="text-xl text-blue-800">Class<span class="text-cyan-500">Up</span></b><small class="block text-[10px] tracking-widest text-gray-500">ENGLISH</small></div>
+</a>
+<nav class="hidden md:flex gap-7 text-sm font-bold">
+<a href="#home">Beranda</a><a href="#kelas">Kelas</a><a href="#keunggulan">Keunggulan</a><a href="#tentang">Tentang</a><a href="#faq">FAQ</a>
+</nav>
+<a href="#daftar" class="hidden sm:block bg-orange-500 text-white px-5 py-3 rounded-xl font-bold">Daftar Kelas</a>
+<button id="mb" class="md:hidden text-2xl">☰</button>
+</div>
+<nav id="mn" class="hidden md:hidden pb-5 space-y-3 font-bold">
+<a class="block" href="#home">Beranda</a><a class="block" href="#kelas">Kelas</a><a class="block" href="#keunggulan">Keunggulan</a><a class="block" href="#tentang">Tentang</a><a class="block" href="#faq">FAQ</a><a class="block text-orange-600" href="#daftar">Daftar Kelas</a>
+</nav>
+</div>
+</header>
+
+<main id="home" class="pt-20">
+<section class="hero text-white">
+<div class="max-w-7xl mx-auto px-5 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+<div>
+<span class="inline-block bg-white/10 border border-white/20 rounded-full px-4 py-2 text-sm font-bold">🇬🇧 English Course Online & Offline</span>
+<h1 class="text-4xl md:text-6xl font-black leading-tight mt-6">Speak English.<br><span class="text-cyan-300">Build Your Future.</span></h1>
+<p class="mt-6 text-lg text-blue-100 leading-8 max-w-xl">Belajar bahasa Inggris dengan metode praktis, interaktif, dan menyenangkan bersama ClassUp English.</p>
+<div class="mt-8 flex flex-wrap gap-4"><a href="#kelas" class="bg-orange-500 px-6 py-3.5 rounded-xl font-bold">Lihat Kelas</a><a href="#daftar" class="bg-white text-blue-800 px-6 py-3.5 rounded-xl font-bold">Coba Sekarang</a></div>
+<div class="mt-10 grid grid-cols-3 gap-5 max-w-lg"><div><b class="text-2xl">Beginner</b><p class="text-sm text-blue-200">Level awal</p></div><div><b class="text-2xl">Online</b><p class="text-sm text-blue-200">Fleksibel</p></div><div><b class="text-2xl">Offline</b><p class="text-sm text-blue-200">Tatap muka</p></div></div>
+</div>
+<div class="bg-white text-gray-800 rounded-3xl p-7 shadow-2xl max-w-md mx-auto">
+<div class="flex justify-between items-center"><div><small class="text-gray-500">ClassUp English</small><h2 class="text-2xl font-black text-blue-800">Your English Journey</h2></div><span class="text-4xl">🌎</span></div>
+<div class="mt-7 space-y-4">
+<div class="rounded-2xl bg-blue-50 p-4"><b>🗣 Speaking</b><p class="text-sm text-gray-500 mt-1">Latihan percakapan sehari-hari.</p></div>
+<div class="rounded-2xl bg-cyan-50 p-4"><b>🎧 Listening</b><p class="text-sm text-gray-500 mt-1">Melatih pemahaman bahasa Inggris.</p></div>
+<div class="rounded-2xl bg-orange-50 p-4"><b>✍️ Grammar & Vocabulary</b><p class="text-sm text-gray-500 mt-1">Bangun dasar bahasa Inggris yang kuat.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-white py-8 border-b">
+<div class="max-w-7xl mx-auto px-5 grid grid-cols-2 md:grid-cols-4 gap-5 text-center">
+<div><b class="text-2xl text-blue-800">Online</b><p class="text-gray-500 text-sm">Belajar dari mana saja</p></div>
+<div><b class="text-2xl text-blue-800">Offline</b><p class="text-gray-500 text-sm">Kelas tatap muka</p></div>
+<div><b class="text-2xl text-blue-800">4 Skills</b><p class="text-gray-500 text-sm">Speaking, Listening, Reading, Writing</p></div>
+<div><b class="text-2xl text-blue-800">Flexible</b><p class="text-gray-500 text-sm">Pilihan jadwal</p></div>
+</div>
+</section>
+
+<section id="kelas" class="py-20">
+<div class="max-w-7xl mx-auto px-5">
+<div class="text-center max-w-2xl mx-auto mb-12"><span class="text-orange-500 font-bold">PILIH KELAS</span><h2 class="text-3xl md:text-4xl font-black mt-2">Kelas Bahasa Inggris ClassUp</h2><p class="text-gray-600 mt-4">Mulai dari dasar sampai percaya diri berbicara bahasa Inggris.</p></div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="card bg-white border rounded-2xl p-7"><span class="text-4xl">🌱</span><h3 class="text-xl font-black mt-5">English Beginner</h3><p class="text-gray-600 mt-3">Untuk pemula yang ingin membangun kosakata, grammar dan percakapan dasar.</p><a href="#daftar" class="text-blue-700 font-bold inline-block mt-5">Daftar kelas →</a></div>
+<div class="card bg-white border rounded-2xl p-7"><span class="text-4xl">🗣️</span><h3 class="text-xl font-black mt-5">Speaking Class</h3><p class="text-gray-600 mt-3">Fokus latihan berbicara agar lebih berani dan lancar dalam percakapan.</p><a href="#daftar" class="text-blue-700 font-bold inline-block mt-5">Daftar kelas →</a></div>
+<div class="card bg-white border rounded-2xl p-7"><span class="text-4xl">🎓</span><h3 class="text-xl font-black mt-5">English for Students</h3><p class="text-gray-600 mt-3">Program untuk pelajar dengan materi sekolah dan komunikasi sehari-hari.</p><a href="#daftar" class="text-blue-700 font-bold inline-block mt-5">Daftar kelas →</a></div>
+<div class="card bg-white border rounded-2xl p-7"><span class="text-4xl">💼</span><h3 class="text-xl font-black mt-5">English for Work</h3><p class="text-gray-600 mt-3">Bahasa Inggris untuk komunikasi profesional, interview dan pekerjaan.</p><a href="#daftar" class="text-blue-700 font-bold inline-block mt-5">Daftar kelas →</a></div>
+<div class="card bg-white border rounded-2xl p-7"><span class="text-4xl">💻</span><h3 class="text-xl font-black mt-5">Online Class</h3><p class="text-gray-600 mt-3">Kelas live online yang dapat diikuti dari rumah menggunakan HP atau laptop.</p><a href="#daftar" class="text-blue-700 font-bold inline-block mt-5">Daftar kelas →</a></div>
+<div class="card bg-white border rounded-2xl p-7"><span class="text-4xl">🏫</span><h3 class="text-xl font-black mt-5">Offline Class</h3><p class="text-gray-600 mt-3">Belajar langsung di kelas bersama pengajar dan teman belajar.</p><a href="#daftar" class="text-blue-700 font-bold inline-block mt-5">Daftar kelas →</a></div>
+</div>
+</div>
+</section>
+
+<section id="keunggulan" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-5">
+<div class="text-center mb-12"><span class="text-orange-500 font-bold">KEUNGGULAN</span><h2 class="text-3xl md:text-4xl font-black mt-2">Kenapa Belajar di ClassUp?</h2></div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="card bg-blue-50 rounded-2xl p-7"><div class="text-4xl">👨‍🏫</div><h3 class="font-black text-xl mt-4">Pengajar</h3><p class="text-gray-600 mt-2">Pendampingan belajar yang komunikatif dan mudah dipahami.</p></div>
+<div class="card bg-cyan-50 rounded-2xl p-7"><div class="text-4xl">🗣️</div><h3 class="font-black text-xl mt-4">Practice</h3><p class="text-gray-600 mt-2">Lebih banyak praktik speaking dan percakapan nyata.</p></div>
+<div class="card bg-orange-50 rounded-2xl p-7"><div class="text-4xl">📱</div><h3 class="font-black text-xl mt-4">Fleksibel</h3><p class="text-gray-600 mt-2">Pilih belajar online atau offline sesuai kebutuhan.</p></div>
+<div class="card bg-green-50 rounded-2xl p-7"><div class="text-4xl">📈</div><h3 class="font-black text-xl mt-4">Progress</h3><p class="text-gray-600 mt-2">Pantau perkembangan kemampuan bahasa Inggris.</p></div>
+</div>
+</div>
+</section>
+
+<section class="py-20 bg-blue-900 text-white">
+<div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+<div><span class="text-cyan-300 font-bold">4 ENGLISH SKILLS</span><h2 class="text-3xl md:text-4xl font-black mt-2">Kuasai Bahasa Inggris dari Empat Sisi</h2><p class="text-blue-100 mt-5 leading-8">Pembelajaran ClassUp melatih kemampuan yang kamu butuhkan untuk berkomunikasi dalam bahasa Inggris.</p></div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white/10 rounded-2xl p-6"><b class="text-xl">🗣 Speaking</b><p class="text-blue-100 text-sm mt-2">Berbicara percaya diri.</p></div>
+<div class="bg-white/10 rounded-2xl p-6"><b class="text-xl">🎧 Listening</b><p class="text-blue-100 text-sm mt-2">Memahami percakapan.</p></div>
+<div class="bg-white/10 rounded-2xl p-6"><b class="text-xl">📖 Reading</b><p class="text-blue-100 text-sm mt-2">Memahami teks.</p></div>
+<div class="bg-white/10 rounded-2xl p-6"><b class="text-xl">✍️ Writing</b><p class="text-blue-100 text-sm mt-2">Menulis dengan benar.</p></div>
+</div>
+</div>
+</section>
+
+<section id="tentang" class="py-20">
+<div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+<div class="rounded-3xl bg-gradient-to-br from-blue-700 to-cyan-500 p-10 text-white"><div class="text-7xl">🇬🇧</div><h2 class="text-3xl font-black mt-6">English for Your Future</h2><p class="mt-4 text-blue-50 leading-8">ClassUp English membantu kamu membangun kemampuan bahasa Inggris yang bisa digunakan dalam sekolah, pekerjaan dan kehidupan sehari-hari.</p></div>
+<div><span class="text-orange-500 font-bold">TENTANG CLASSUP</span><h2 class="text-3xl md:text-4xl font-black mt-2">Belajar Bahasa Inggris dengan Cara yang Praktis</h2><p class="text-gray-600 mt-5 leading-8">Kami percaya belajar bahasa Inggris harus lebih banyak praktik, bukan hanya menghafal teori.</p><div class="mt-6 space-y-3"><p>✓ Materi bertahap sesuai level</p><p>✓ Speaking practice</p><p>✓ Pilihan online dan offline</p><p>✓ Jadwal belajar fleksibel</p></div></div>
+</div>
+</section>
+
+<section class="py-20 bg-white">
+<div class="max-w-5xl mx-auto px-5">
+<div class="text-center mb-10"><span class="text-orange-500 font-bold">TESTIMONI</span><h2 class="text-3xl font-black mt-2">Cerita dari Siswa</h2><p class="text-gray-600 mt-3">Foto dan testimoni siswa ClassUp English.</p></div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="border rounded-2xl overflow-hidden bg-white card">
+<!-- FOTO TESTIMONI 1: ganti testimoni-1.jpg dengan foto siswa kamu -->
+<img src="testimoni-1.jpg" alt="Testimoni siswa ClassUp" class="w-full h-56 object-cover bg-gray-100"
+     onerror="this.style.display='none'">
+<div class="p-7"><div class="text-orange-500">★★★★★</div><p class="mt-4 text-gray-600 leading-7">“Saya jadi lebih berani speaking setelah sering latihan percakapan.”</p><b class="block mt-5">Nama Siswa 1</b><small class="text-gray-500">Student</small></div>
+</div>
+<div class="border rounded-2xl overflow-hidden bg-white card">
+<!-- FOTO TESTIMONI 2: ganti testimoni-2.jpg dengan foto siswa kamu -->
+<img src="testimoni-2.jpg" alt="Testimoni siswa ClassUp" class="w-full h-56 object-cover bg-gray-100"
+     onerror="this.style.display='none'">
+<div class="p-7"><div class="text-orange-500">★★★★★</div><p class="mt-4 text-gray-600 leading-7">“Kelas online-nya fleksibel dan mudah diikuti dari rumah.”</p><b class="block mt-5">Nama Siswa 2</b><small class="text-gray-500">Student</small></div>
+</div>
+<div class="border rounded-2xl overflow-hidden bg-white card">
+<!-- FOTO TESTIMONI 3: ganti testimoni-3.jpg dengan foto siswa kamu -->
+<img src="testimoni-3.jpg" alt="Testimoni siswa ClassUp" class="w-full h-56 object-cover bg-gray-100"
+     onerror="this.style.display='none'">
+<div class="p-7"><div class="text-orange-500">★★★★★</div><p class="mt-4 text-gray-600 leading-7">“Belajar grammar jadi lebih mudah karena langsung dipraktikkan.”</p><b class="block mt-5">Nama Siswa 3</b><small class="text-gray-500">Student</small></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="faq" class="py-20">
+<div class="max-w-3xl mx-auto px-5"><div class="text-center mb-10"><span class="text-orange-500 font-bold">FAQ</span><h2 class="text-3xl font-black mt-2">Pertanyaan Umum</h2></div>
+<div class="space-y-3">
+<details class="bg-white border rounded-xl p-5"><summary class="font-bold cursor-pointer">Apakah tersedia kelas online?</summary><p class="mt-3 text-gray-600">Ya. ClassUp menyediakan kelas live online yang dapat diikuti dari rumah.</p></details>
+<details class="bg-white border rounded-xl p-5"><summary class="font-bold cursor-pointer">Apakah tersedia kelas offline?</summary><p class="mt-3 text-gray-600">Ya. ClassUp juga menyediakan kelas tatap muka. Lokasi dan jadwal dapat diinformasikan oleh admin.</p></details>
+<details class="bg-white border rounded-xl p-5"><summary class="font-bold cursor-pointer">Apakah pemula bisa ikut?</summary><p class="mt-3 text-gray-600">Bisa. Tersedia kelas Beginner untuk peserta yang baru mulai belajar bahasa Inggris.</p></details>
+<details class="bg-white border rounded-xl p-5"><summary class="font-bold cursor-pointer">Berapa usia peserta?</summary><p class="mt-3 text-gray-600">Program dapat disesuaikan untuk anak, pelajar, remaja dan dewasa.</p></details>
+</div></div>
+</section>
+
+<section id="daftar" class="py-20 bg-blue-900">
+<div class="max-w-5xl mx-auto px-5"><div class="text-center text-white mb-10"><span class="text-cyan-300 font-bold">REGISTRATION</span><h2 class="text-3xl md:text-4xl font-black mt-2">Daftar Kelas ClassUp English</h2><p class="text-blue-100 mt-3">Isi data dan pilih kelas yang kamu inginkan.</p></div>
+<form id="form" class="bg-white rounded-3xl p-6 md:p-9 grid md:grid-cols-2 gap-5">
+<div><label class="font-bold">Nama</label><input id="nama" required class="w-full border rounded-xl p-3 mt-2" placeholder="Nama lengkap"></div>
+<div><label class="font-bold">WhatsApp</label><input id="nomor" required class="w-full border rounded-xl p-3 mt-2" placeholder="08xxxxxxxxxx"></div>
+<div><label class="font-bold">Pilihan Kelas</label><select id="kelasPilihan" class="w-full border rounded-xl p-3 mt-2"><option>English Beginner</option><option>Speaking Class</option><option>English for Students</option><option>English for Work</option></select></div>
+<div><label class="font-bold">Mode Belajar</label><select id="mode" class="w-full border rounded-xl p-3 mt-2"><option>Online</option><option>Offline</option></select></div>
+<div class="md:col-span-2"><label class="font-bold">Pesan</label><textarea id="pesan" rows="4" class="w-full border rounded-xl p-3 mt-2" placeholder="Contoh: ingin tanya jadwal dan biaya"></textarea></div>
+<div class="md:col-span-2"><button class="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-xl font-black">📱 Kirim Pendaftaran via WhatsApp</button></div>
+</form>
+</div>
+</section>
+</main>
+
+<!--
+FILE FOTO YANG BISA KAMU UPLOAD KE REPOSITORY:
+1. logo-classup.png       = logo brand
+2. testimoni-1.jpg        = foto siswa 1
+3. testimoni-2.jpg        = foto siswa 2
+4. testimoni-3.jpg        = foto siswa 3
+Kamu juga bisa menambah testimoni dengan menyalin blok kartu di atas.
+-->
+<footer class="bg-gray-950 text-gray-300">
+<div class="max-w-7xl mx-auto px-5 py-12 grid md:grid-cols-3 gap-8">
+<div><b class="text-2xl text-white">Class<span class="text-cyan-400">Up</span> English</b><p class="mt-3 text-sm">Kursus bahasa Inggris online dan offline.</p></div>
+<div><b class="text-white">Menu</b><p class="mt-3 text-sm space-y-2"><a href="#kelas" class="block">Kelas</a><a href="#keunggulan" class="block">Keunggulan</a><a href="#faq" class="block">FAQ</a></p></div>
+<div><b class="text-white">Kontak</b><p class="mt-3 text-sm">WhatsApp: 08xxxxxxxxxx<br>Email: info@classup.id<br>Indonesia</p></div>
+</div>
+<div class="border-t border-white/10 text-center py-5 text-xs">© 2026 ClassUp English. All rights reserved.</div>
+</footer>
+
+<a href="#daftar" class="fixed right-5 bottom-5 bg-orange-500 text-white rounded-full px-5 py-3 font-bold shadow-xl z-40">Daftar ↗</a>
+
+<script>
+document.getElementById('mb').onclick=()=>document.getElementById('mn').classList.toggle('hidden');
+document.querySelectorAll('#mn a').forEach(x=>x.onclick=()=>document.getElementById('mn').classList.add('hidden'));
+document.getElementById('form').addEventListener('submit',function(e){
+e.preventDefault();
+const admin='6281366929106'; // WhatsApp ClassUp
+const nama=document.getElementById('nama').value;
+const nomor=document.getElementById('nomor').value;
+const kelas=document.getElementById('kelasPilihan').value;
+const mode=document.getElementById('mode').value;
+const pesan=document.getElementById('pesan').value;
+const text=`Halo Admin ClassUp English,%0A%0ASaya ingin mendaftar kursus.%0A%0ANama: ${encodeURIComponent(nama)}%0ANomor: ${encodeURIComponent(nomor)}%0AKelas: ${encodeURIComponent(kelas)}%0AMode: ${encodeURIComponent(mode)}%0APesan: ${encodeURIComponent(pesan)}`;
+window.open('https://wa.me/'+admin+'?text='+text,'_blank');
+});
+</script>
+</body>
+</html>
