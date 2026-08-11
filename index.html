@@ -39,8 +39,37 @@ body{margin:0;color:#172033;background:#f8fafc}
 <button id="tombolMusik" onclick="toggleMusik()">🔊</button>
 
 <script>
-     
- </head>
+  const musik = document.getElementById("musikClassUp");
+  const tombol = document.getElementById("tombolMusik");
+
+  // Coba putar otomatis
+  window.addEventListener("load", function () {
+    musik.volume = 0.25;
+    musik.play().catch(function () {
+      // Browser memblokir autoplay sampai pengunjung menyentuh halaman
+      tombol.innerHTML = "▶️";
+    });
+  });
+
+  // Putar setelah pengunjung menyentuh halaman
+  document.addEventListener("click", function mulaiMusik() {
+    musik.volume = 0.25;
+    musik.play().catch(() => {});
+    tombol.innerHTML = "🔊";
+    document.removeEventListener("click", mulaiMusik);
+  }, { once: true });
+
+  function toggleMusik() {
+    if (musik.paused) {
+      musik.play();
+      tombol.innerHTML = "🔊";
+    } else {
+      musik.pause();
+      tombol.innerHTML = "🔇";
+    }
+  }
+</script>
+</head>
 <body>
 
 <header class="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm">
