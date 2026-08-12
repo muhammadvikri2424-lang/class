@@ -34,8 +34,61 @@ body{margin:0;color:#172033;background:#f8fafc}
     cursor: pointer;
     box-shadow: 0 5px 20px rgba(0,0,0,.25);
   }
-</style>
+     #containerKursus {
+  position: fixed;
+  bottom: 140px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9998;
+  font-family: sans-serif;
+}
 
+.card-kursus {
+  background: #ffffff;
+  color: #1e293b;
+  border: 2px solid #2563eb;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-kursus:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.nama-paket { font-weight: bold; font-size: 13px; }
+.detail-paket { font-size: 11px; opacity: 0.8; margin: 2px 0; }
+.harga-paket { font-size: 12px; color: #2563eb; }
+.card-kursus:hover .harga-paket { color: #ffffff; }
+     
+</style>
+<div id="containerKursus">
+  <button class="card-kursus" onclick="pilihPaket('Basic English', 150000)">
+    <span class="nama-paket">Basic English</span>
+    <span class="detail-paket">Grammar & Vocabulary</span>
+    <strong class="harga-paket">Rp 150.000 / bln</strong>
+  </button>
+
+  <button class="card-kursus" onclick="pilihPaket('Conversational', 300000)">
+    <span class="nama-paket">Conversational</span>
+    <span class="detail-paket">Speaking & Pronunciation</span>
+    <strong class="harga-paket">Rp 300.000 / bln</strong>
+  </button>
+
+  <button class="card-kursus" onclick="pilihPaket('IELTS / TOEFL Prep', 500000)">
+    <span class="nama-paket">IELTS / TOEFL Prep</span>
+    <span class="detail-paket">Intensive Exam Mastery</span>
+    <strong class="harga-paket">Rp 500.000 / bln</strong>
+  </button>
+         </div>
+     
 <button id="tombolMusik" onclick="toggleMusik()">🔊</button>
 
 <script>
@@ -68,6 +121,11 @@ body{margin:0;color:#172033;background:#f8fafc}
       tombol.innerHTML = "🔇";
     }
   }
+     function pilihPaket(namaPaket, harga) {
+  const pesanWA = `Halo, saya berminat mendaftar paket ${namaPaket} (Rp ${harga.toLocaleString('id-ID')}).`;
+  window.open(`https://wa.me/6281366929106?text=${encodeURIComponent(pesanWA)}`, '_blank');
+}
+
 </script>
 </head>
 <body>
